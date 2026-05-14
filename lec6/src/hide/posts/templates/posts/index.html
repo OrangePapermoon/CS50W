@@ -12,13 +12,16 @@
                     padding: 20px;
                     margin-bottom: 10px;
                 }
+
                 75% {
                     opacity: 0;
                     height: 100%;
                     line-height: 100%;
                     padding: 20px;
                     margin-bottom: 10px;
+
                 }
+
                 100% {
                     opacity: 0;
                     height: 0px;
@@ -70,9 +73,9 @@
                 const element = event.target;
                 if (element.className === 'hide') {
                     element.parentElement.style.animationPlayState = 'running';
-                    element.parentElement.addEventListener('animationend', () =>  {
+                    element.parentElement.addEventListener('animationend', () => {
                         element.parentElement.remove();
-                    });
+                    })
                 }
             });
 
